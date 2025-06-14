@@ -2,7 +2,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
 *{
  font-family: "Rancho", cursive;
 }
+
+ @plugin "daisyui" {
+   themes: light --default, dark --prefersdark, dark, aqua;
+ }

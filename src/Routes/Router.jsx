@@ -11,6 +11,7 @@ import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRouter from "../Context/PrivateRouter";
+import UpdateAssignment from "../Pages/UpdateAssignment";
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
     {
         path: "/assignments",
        element: <Assignments/>
+    },
+    {
+path: "/updateAssignment/:id",
+loader: ({params}) =>fetch(`http://localhost:3000/createAssignment/${params.id}`),
+Component:UpdateAssignment,
     },
     {
         path: "/pendingAssignment",

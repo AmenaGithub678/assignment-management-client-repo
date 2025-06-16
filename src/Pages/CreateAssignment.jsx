@@ -34,7 +34,7 @@ const description = formData.get("description");
 
     const newAssignment = {
       ...Object.fromEntries(formData.entries()),
-      dueDate: dueDate?.toISOString().split('T')[0], // format: yyyy-mm-dd
+      dueDate: dueDate?.toISOString().split('T')[0], // format: year-month-date
     };
 
     console.log("new assignment", newAssignment);
@@ -176,7 +176,7 @@ const description = formData.get("description");
         <label className="label">User Email</label>
         <input
           type="email"
-          name="creatorEmail"
+          name="email"
           className="input w-full"
           value={user?.email}
           readOnly

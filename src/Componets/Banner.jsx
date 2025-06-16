@@ -10,13 +10,14 @@ const Banner = () => {
    <div className='flex-1'>
      <motion.img
       src={team1}
-      animate={{y: [100,150, 0]}}
+      animate={{y: [30, 0, 30]}}
      transition={{
-        duration: 5,
-        repeat: Infinity,     
+        duration: 3,
+          repeat: Infinity,
+      repeatType: "mirror",     
      }}
-      className="
-      max-w-sm 
+      className="max-w-2xs
+      md:max-w-sm 
       rounded-t-[40px]
       rounded-br-[40px]
       border-s-8
@@ -26,14 +27,15 @@ const Banner = () => {
     />
     <motion.img
       src={team2}
-      animate={{x: [100,150, 0]}}
+      animate={{x: [30, 0, 30]}}
      transition={{
-        duration: 5,
+        duration: 3,
         delay:10,
-        repeat: Infinity,     
+          repeat: Infinity,
+      repeatType: "mirror",    
      }}
-      className="
-      max-w-sm 
+      className="max-w-2xs
+      md:max-w-sm 
       rounded-t-[40px]
       rounded-br-[40px]
       border-s-8
@@ -42,9 +44,9 @@ const Banner = () => {
       shadow-2xl"
     />
    </div>
-    <div className='flex-1'>
+    <div className='flex-1 '>
 
-<h1 className='font-bold text-4xl text-[#AD56C4]' >
+<h1 className='font-bold text-xl lg:text-4xl text-[#AD56C4] pr-4' >
   Connecting learners through{' '}
   <span style={{ fontWeight: 'bold', color: 'green' }}>
     <Typewriter
@@ -63,7 +65,7 @@ const Banner = () => {
   <Cursor />
 </h1>
  <p className="py-2 
- text-[#f000b8] text-xl font-normal">
+ text-[#f000b8] text-base lg:text-xl font-normal pr-4">
         AssignMates is a modern web platform designed for collaborative learning through assignment-based interaction. Built using the MERN stack, it provides a seamless experience for users to create, attempt, and evaluate assignments within a trusted peer community. With secure authentication, intuitive UI, and real-time submission tracking, AssignMates promotes accountability, feedback, and skill development — all in one place.
       </p>
       <button className="btn btn-primary">Get Started</button>

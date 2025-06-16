@@ -54,7 +54,7 @@ const AssignmentCard = ({ assignment }) => {
         </Link>
           <Link to={`/updateAssignment/${_id}`}> 
         <button
-          onClick={() => handleUpdate(assignment)}
+         
           className="btn btn-md bg-yellow-500 text-white
           text-xl hover:bg-yellow-600 "
         >

@@ -3,10 +3,17 @@ import SocialIcon from '../Componets/Shared/SocialIcon';
 import Lottie from 'lottie-react';
 import loginLottie from '../assets/lotties/Register.json';
 import { AuthContext } from '../Context/AuthContext';
+import Swal from 'sweetalert2';
+import { useLocation, useNavigate } from 'react-router';
 
 const Login = () => {
 
-const {userSignIn} = useContext(AuthContext);
+const {userSignIn,setUser} = useContext(AuthContext);
+
+// location
+  const location = useLocation()
+
+   const navigate = useNavigate();
 const handleSignIn = e => {
     e.preventDefault();
     const form = e.target;
@@ -17,12 +24,28 @@ const handleSignIn = e => {
   // signIn  with -- firebase
   userSignIn(email,password)
   .then( result =>{
-    console.log(result.user);
-    alert('Login Successfully')
+   setUser(result.user);
+ 
+     Swal.fire({
+          icon: 'success',
+          title: 'Login Successfully!!',
+          text: 'You have successfully logged in!',
+          showConfirmButton: false,
+          timer: 2000
+        });
+
+         navigate(location?.state ? location.state : "/")
+
   }
   )
   .catch((error)=>{
     console.log(error);
+
+    Swal.fire({
+        icon: 'error',
+        title: 'Login Failed',
+        text: error.message || 'Invalid credentials!',
+      });
   })
 
     }

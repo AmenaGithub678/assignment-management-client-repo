@@ -10,6 +10,8 @@ import MyAttempted from "../Pages/MyAttempted";
 import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivateRouter from "../Context/PrivateRouter";
+
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,9 @@ const router = createBrowserRouter([
     },
     {
         path: "/createassignment",
-       element: <CreateAssignment/>,
+        element: <PrivateRouter>
+         <CreateAssignment/>
+       </PrivateRouter>,
     },
     {
         path: "/assignments",
@@ -31,11 +35,13 @@ const router = createBrowserRouter([
     },
     {
         path: "/pendingAssignment",
-       element: <PendingAssignment/>
+       element: <PrivateRouter>
+         <PendingAssignment/>
+         </PrivateRouter>
     },
     {
         path: "/Myattempt",
-       element: <MyAttempted/>
+       element: <PrivateRouter><MyAttempted/></PrivateRouter>,
     },
    ],
   },

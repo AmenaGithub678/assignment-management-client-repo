@@ -11,7 +11,7 @@ const getValidDate = (dateStr) => {
 };
 const UpdateAssignment = () => {
 
-    const {_id,title,description,marks,thumbnail,difficulty,dueDate, userName,creatorEmail} = useLoaderData();
+    const {_id,title,description,marks,thumbnail,difficulty,dueDate, userName,email} = useLoaderData();
 
     const {user} = use(AuthContext);
  const [updatedDate, setUpdatedDate] = useState(() => getValidDate(dueDate));
@@ -144,7 +144,7 @@ const UpdateAssignment = () => {
             <input
               type="text"
               name="userName"
-              value={userName}
+              value={user?.displayName}
               className="input w-full"
               readOnly
             />
@@ -154,8 +154,8 @@ const UpdateAssignment = () => {
             <label className="label">User Email</label>
             <input
               type="email"
-              name="creatorEmail"
-              defaultValue={creatorEmail}
+              name="email"
+              defaultValue={user?.email}
               className="input w-full"
               readOnly
             />

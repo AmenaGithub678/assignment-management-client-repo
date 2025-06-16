@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { use, useState } from 'react';
 import { useLoaderData } from 'react-router';
+import { AuthContext } from '../Context/AuthContext';
+import ViewModal from '../Componets/ViewModal';
 
 const ViewAssignment = () => {
  const assignments = useLoaderData();
+
+ const [showModal, setShowModal] = useState(false);
+  const { user } = use(AuthContext);
     return (
  <div>
    <div className="max-w-3xl mx-auto mt-10 p-6 bg-[#FFC2BA] shadow rounded-lg my-5">
@@ -16,7 +21,21 @@ const ViewAssignment = () => {
       <p className="text-md mt-1 text-gray-500">Due: {new Date(assignments.dueDate).toLocaleDateString()}</p>
       <p className="text-md mt-1 text-gray-500">Assigned by: {assignments.email}</p>
 
-      <button className="btn btn-secondary">Take a Assignment</button>
+      <button
+        onClick={() => setShowModal(true)}
+        className="btn btn-primary"
+      >
+        Take Assignment
+      </button>
+
+      {/* Modal */}
+      {showModal && (
+        <ViewModal
+          assignmentId={assignments._id}
+          userEmail={user.email}
+          closeModal={() => setShowModal(false)}
+        />
+      )}
     </div> 
         </div>
     );

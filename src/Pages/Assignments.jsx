@@ -11,7 +11,7 @@ const [difficulty, setDifficulty] = useState('');
 
 
 useEffect(() => {
-  let url = 'http://localhost:3000/assignments';
+  let url = 'https://my-assignmates-server-side.vercel.app/assignments';
 
   const params = new URLSearchParams();
   if (search) params.append('search', search);

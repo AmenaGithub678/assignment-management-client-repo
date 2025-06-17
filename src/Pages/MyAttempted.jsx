@@ -7,7 +7,7 @@ const [assignments, setAssignments] = useState([]);
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:3000/submittedAssignments/user/${user.email}`)
+      fetch(`https://my-assignmates-server-side.vercel.app/submittedAssignments/user/${user.email}`)
         .then(res => res.json())
         .then(data => setAssignments(data));
     }

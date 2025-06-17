@@ -9,7 +9,7 @@ const PendingAssignment = () => {
   const [selectedAssignment, setSelectedAssignment] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/submittedAssignments`)
+    fetch(`https://my-assignmates-server-side.vercel.app/submittedAssignments`)
       .then(res => res.json())
       .then(data => {
         const pending = data.filter(item => item.status === 'pending');

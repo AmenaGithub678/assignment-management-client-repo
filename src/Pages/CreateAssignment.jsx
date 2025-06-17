@@ -43,7 +43,7 @@ const description = formData.get("description");
     console.log("new assignment", newAssignment);
 
 // POST to server
-fetch('http://localhost:3000/createAssignment', {
+fetch('https://my-assignmates-server-side.vercel.app/createAssignment', {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

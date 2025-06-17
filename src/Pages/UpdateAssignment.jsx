@@ -26,7 +26,7 @@ const UpdateAssignment = () => {
     };
     
             // send updated task to the database
-           fetch(`http://localhost:3000/createAssignment/${_id}`, {
+           fetch(`https://my-assignmates-server-side.vercel.app/createAssignment/${_id}`, {
       method: "PUT",
       headers: {
         'Content-Type': 'application/json',

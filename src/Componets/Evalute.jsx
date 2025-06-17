@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import { RxCross2 } from "react-icons/rx";
 const Evalute = ({ assignment, onClose, onMarkComplete }) => {
-
 const [marks, setMarks] = useState('');
   const [feedback, setFeedback] = useState('');
-
-  const handleEvaluation = async (e) => {
+    const handleEvaluation = async (e) => {
     e.preventDefault();
 
     if (!marks || isNaN(marks)) {
@@ -19,9 +17,8 @@ const [marks, setMarks] = useState('');
       feedback,
       examiner: assignment?.reviewerName || 'Admin'
     };
-
     try {
-      const res = await fetch(`http://localhost:3000/submittedAssignments/${assignment._id}`, {
+      const res = await fetch(`https://my-assignmates-server-side.vercel.app/submittedAssignments/${assignment._id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'

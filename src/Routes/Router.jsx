@@ -39,12 +39,12 @@ const router = createBrowserRouter([
     },
     {
   path: "/assignments/:id",
-  loader: ({ params }) => fetch(`http://localhost:3000/createAssignment/${params.id}`),
+  loader: ({ params }) => fetch(`https://my-assignmates-server-side.vercel.app/createAssignment/${params.id}`),
   Component: ViewAssignment,
 },
     {
 path: "/updateAssignment/:id",
-loader: ({params}) =>fetch(`http://localhost:3000/createAssignment/${params.id}`),
+loader: ({params}) =>fetch(`https://my-assignmates-server-side.vercel.app/createAssignment/${params.id}`),
 Component:UpdateAssignment,
     },
     {

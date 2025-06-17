@@ -12,8 +12,7 @@ const {userSignIn,setUser} = useContext(AuthContext);
 
 // location
   const location = useLocation()
-
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 const handleSignIn = e => {
     e.preventDefault();
     const form = e.target;
@@ -33,9 +32,7 @@ const handleSignIn = e => {
           showConfirmButton: false,
           timer: 2000
         });
-
          navigate(location?.state ? location.state : "/")
-
   }
   )
   .catch((error)=>{

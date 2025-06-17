@@ -5,6 +5,9 @@ import "react-datepicker/dist/react-datepicker.css";
 import Swal from 'sweetalert2';
 const CreateAssignment = () => {
 const {user} = use(AuthContext);
+
+console.log('want to show the token', user.
+accessToken);
 const [dueDate, setDueDate] = useState(null);
 
 const handleCreateAssignment = e => {
@@ -40,13 +43,15 @@ const description = formData.get("description");
     console.log("new assignment", newAssignment);
 
     // POST to server
-    fetch('http://localhost:3000/createAssignment', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(newAssignment)
-    })
+   fetch('http://localhost:3000/createAssignment', {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Authorization": `Bearer ${user.accessToken}` 
+  },
+  body: JSON.stringify(newAssignment)
+})
+
       .then(res => res.json())
       .then(data => {
         console.log("Server response:", data);

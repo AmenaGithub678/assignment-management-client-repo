@@ -3,6 +3,7 @@ import { AuthContext } from '../Context/AuthContext';
 import { Link, NavLink } from 'react-router';
 import logo from'../assets/logo.png';
  import userIcon from "../assets/user.png";
+import Swal from 'sweetalert2';
 const Navbar = () => {
 
 const {user,logOut} = useContext(AuthContext);  
@@ -10,7 +11,13 @@ const {user,logOut} = useContext(AuthContext);
       console.log("user trying to logOut");
       logOut()
       .then(() => {
-alert('successfully logOut')
+Swal.fire({
+          icon: 'success',
+          title: 'Login Successfully!!',
+          text: 'You have successfully logged Out!',
+          showConfirmButton: false,
+          timer: 2000
+        });
 }).catch((error) => {
   console.log(error);
 });

@@ -57,7 +57,7 @@ alert('successfully logOut')
 
           {/* Logo */}
           <Link to="/" className="text-xl text-[#0F0F0FCC] font-bold flex items-center gap-1">
-            <img src={logo} className="w-[40px] h-[40px] rounded object-contain" />
+            <img src={logo} className="w-[40px] h-[40px] rounded object-contain skeleton" />
             <h1 className="text-lg font-bold text-[#AD56C4]">
               Assign<span className="font-bold text-[#8866DE]">Mates</span>
             </h1>

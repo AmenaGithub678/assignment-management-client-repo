@@ -6,7 +6,7 @@ const AssignmentCard = ({ assignment }) => {
       const { _id, title, marks, difficulty, thumbnail } = assignment;
 
       const handleDelete =(_id) =>{
-            console.log(_id);
+            // console.log(_id);
       
       Swal.fire({
         title: "Are you sure?",
@@ -17,7 +17,7 @@ const AssignmentCard = ({ assignment }) => {
         cancelButtonColor: "#d33",
         confirmButtonText: "Yes, delete it!"
       }).then((result) => {
-      console.log(result.isConfirmed);
+      // console.log(result.isConfirmed);
       
        if (result.isConfirmed) {
         

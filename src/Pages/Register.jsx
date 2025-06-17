@@ -63,7 +63,7 @@ const { createUser,setUser} = useContext(AuthContext);
   }
   )
   .catch((error)=>{
-    console.log(error);
+    // console.log(error);
   })
 
     }

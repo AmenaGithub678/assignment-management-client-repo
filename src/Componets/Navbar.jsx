@@ -19,7 +19,7 @@ Swal.fire({
           timer: 2000
         });
 }).catch((error) => {
-  console.log(error);
+  // console.log(error);
 });
     }
 

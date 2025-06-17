@@ -18,7 +18,7 @@ const handleSignIn = e => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
 
   // signIn  with -- firebase
   userSignIn(email,password)
@@ -36,7 +36,7 @@ const handleSignIn = e => {
   }
   )
   .catch((error)=>{
-    console.log(error);
+    // console.log(error);
 
     Swal.fire({
         icon: 'error',

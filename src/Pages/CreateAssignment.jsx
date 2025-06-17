@@ -6,8 +6,8 @@ import Swal from 'sweetalert2';
 const CreateAssignment = () => {
 const {user} = use(AuthContext);
 
-console.log('want to show the token', user.
-accessToken);
+// console.log('want to show the token', user.
+// accessToken);
 const [dueDate, setDueDate] = useState(null);
 
 const handleCreateAssignment = e => {
@@ -40,7 +40,7 @@ const description = formData.get("description");
       dueDate: dueDate?.toISOString().split('T')[0], // format: year-month-date
     };
 
-    console.log("new assignment", newAssignment);
+    // console.log("new assignment", newAssignment);
 
 // POST to server
 fetch('https://my-assignmates-server-side.vercel.app/createAssignment', {
@@ -54,7 +54,7 @@ fetch('https://my-assignmates-server-side.vercel.app/createAssignment', {
 
       .then(res => res.json())
       .then(data => {
-        console.log("Server response:", data);
+        // console.log("Server response:", data);
         if (data.insertedId || data.acknowledged) {
           Swal.fire({
             title: "Assignment Created!",

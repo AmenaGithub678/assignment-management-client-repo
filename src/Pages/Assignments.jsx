@@ -28,12 +28,12 @@ useEffect(() => {
 
 
   const handleDelete = (id) => {
-    console.log('Delete assignment with ID:', id);
+    // console.log('Delete assignment with ID:', id);
     
   };
 
   const handleUpdate = (assignment) => {
-    console.log('Update assignment:', assignment);
+    // console.log('Update assignment:', assignment);
   
   };
 

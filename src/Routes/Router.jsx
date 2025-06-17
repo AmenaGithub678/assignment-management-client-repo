@@ -13,6 +13,8 @@ import Register from "../Pages/Register";
 import PrivateRouter from "../Context/PrivateRouter";
 import UpdateAssignment from "../Pages/UpdateAssignment";
 import ViewAssignment from "../Pages/ViewAssignment";
+import Evalute from "../Componets/Evalute";
+
 
 
 const router = createBrowserRouter([
@@ -55,6 +57,15 @@ Component:UpdateAssignment,
         path: "/Myattempt",
        element: <PrivateRouter><MyAttempted/></PrivateRouter>,
     },
+    {
+     path: "/evaluate/:id",
+    element: 
+          <PrivateRouter>
+          <Evalute/>
+          </PrivateRouter>
+        ,
+    }
+   
    ],
   },
   {

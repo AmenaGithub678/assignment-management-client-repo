@@ -5,7 +5,6 @@ import ViewModal from '../Componets/ViewModal';
 
 const ViewAssignment = () => {
  const assignments = useLoaderData();
-
  const [showModal, setShowModal] = useState(false);
   const { user } = use(AuthContext);
     return (
@@ -20,7 +19,6 @@ const ViewAssignment = () => {
       </p>
       <p className="text-md mt-1 text-gray-500">Due: {new Date(assignments.dueDate).toLocaleDateString()}</p>
       <p className="text-md mt-1 text-gray-500">Assigned by: {assignments.email}</p>
-
       <button
         onClick={() => setShowModal(true)}
         className="btn btn-primary"

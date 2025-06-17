@@ -4,8 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router';
 const ViewModal = ({ assignmentId, closeModal }) => {
-
-      const [docLink, setDocLink] = useState("");
+const [docLink, setDocLink] = useState("");
   const [note, setNote] = useState("");
 const {user} = use(AuthContext);
 
@@ -17,6 +16,7 @@ const navigate = useNavigate();
             docLink,
             note,
             email: user?.email,
+            name: user.displayName,
             submittedAt: new Date()
         };
 

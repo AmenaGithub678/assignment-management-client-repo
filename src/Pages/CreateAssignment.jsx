@@ -42,8 +42,8 @@ const description = formData.get("description");
 
     console.log("new assignment", newAssignment);
 
-    // POST to server
-   fetch('http://localhost:3000/createAssignment', {
+// POST to server
+fetch('http://localhost:3000/createAssignment', {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

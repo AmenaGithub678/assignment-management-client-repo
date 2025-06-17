@@ -21,6 +21,7 @@ const navigate = useNavigate();
         };
 
         try {
+            
             const res = await fetch('http://localhost:3000/submittedAssignments', {
                 method: 'POST',
                 headers: {

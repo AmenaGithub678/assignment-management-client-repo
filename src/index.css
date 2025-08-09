@@ -8,4 +8,6 @@
 
  @plugin "daisyui" {
    themes: light --default, dark --prefersdark, dark, aqua;
+   --color-primary: #FD3DB5;
+
  }

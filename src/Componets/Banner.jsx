@@ -5,7 +5,7 @@ import team2 from '../assets/team/team2.jpg';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 const Banner = () => {
     return (
-<div className="hero bg-[#c4d6ffe6] min-h-96">
+<div className="hero bg-[#FF8DA1] min-h-96">
 <div className="hero-content flex-col lg:flex-row-reverse">
    <div className='flex-1'>
      <motion.img

@@ -26,8 +26,8 @@ Swal.fire({
     }
 
     return (
-<div className="w-full mx-auto">
-      <div className="navbar bg-base-100 shadow-sm mt-8 px-4">
+<div className="w-full mx-auto sticky top-0 z-50">
+      <div className="navbar bg-[#c4d6ffe6] shadow-sm mt-8 px-4">
         {/* Navbar Start */}
         <div className="navbar-start">
           {/* Mobile Dropdown */}

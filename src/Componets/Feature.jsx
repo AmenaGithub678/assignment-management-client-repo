@@ -3,10 +3,10 @@ import { FcDeployment,FcCollaboration,FcIdea,FcComboChart,FcLike  } from "react-
 const Feature = () => {
   return (
     <div>
-      <div className='mx-auto'>
+      <div className='mx-auto bg-gray-100'>
 <div className='lg:p-10 text-center '>
-        <h1 className="text-xl lg:text-6xl text-[#AD56C4]">How Assignmates Works</h1>
-        <p className='text-[#FD3DB5] font-semibold mb-2 text-base lg:text-2xl'>
+        <h1 className="text-xl lg:text-4xl text-[#AD56C4] font-normal">How Assignmates Works</h1>
+        <p className='text-[#FD3DB5] font-semibold mb-2 text-base lg:text-xl'>
          Start your journey in just a few clicks and supercharge your group study experience!
 
 

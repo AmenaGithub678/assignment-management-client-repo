@@ -128,8 +128,14 @@ return (
                 <li><span className="font-bold text-[#AD56C4]">{user?.displayName || user?.email}</span></li>
                 <li><NavLink to="/createassignment" className="text-[#AD56C4]">Create Assignment</NavLink></li>
                 <li><NavLink to="/Myattempt" className="text-[#AD56C4]">My Attempt</NavLink></li>
-                <li><NavLink to="/pendingAssignment" className={({ isActive }) => isActive ? "text-[#AD56C4] " : "text-[#f000b8] "}>Pending Assignment</NavLink></li>
-                <li><button onClick={handleLogOut} className='text-[#AD56C4]'>Logout</button></li>
+
+     <li><NavLink to="/pendingAssignment" className="text-[#AD56C4]">Pending Assignment</NavLink></li>
+
+ <li><NavLink to="/leaderboard" className="text-[#AD56C4]">Leaderboard</NavLink></li>
+
+ <li><NavLink to="/resourcesData" className="text-[#AD56C4]">Resources</NavLink></li>
+<li><button onClick={handleLogOut} className='text-[#AD56C4]'>Logout</button>
+                </li>
               </ul>
             </div>
           )}

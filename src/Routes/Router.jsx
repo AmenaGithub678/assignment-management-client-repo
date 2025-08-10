@@ -15,6 +15,8 @@ import UpdateAssignment from "../Pages/UpdateAssignment";
 import ViewAssignment from "../Pages/ViewAssignment";
 import Evalute from "../Componets/Evalute";
 import About from "../Pages/About";
+import Leaderboard from "../Pages/Leaderboard";
+import Resources from "../Pages/Resources";
 
 
 
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
     {
         path: "/about",
        element: <About></About>
+    },
+    {
+        path: "/leaderboard",
+       element: <Leaderboard></Leaderboard>
+    },
+{
+        path: "/resourcesData",
+       element: <Resources></Resources>
     },
     {
   path: "/assignments/:id",

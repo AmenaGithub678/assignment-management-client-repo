@@ -2,15 +2,15 @@ import React from 'react';
 import { FaUsers, FaTasks, FaStar, FaGlobe } from "react-icons/fa";
 const AboutFeaturesSection = () => {
     return (
-        <section className="max-w-7xl mx-auto px-4 py-12">
+        <section className="mx-auto px-4 py-12">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-[#AD56C4]">
             Learn, Collaborate & Grow Together with Friends
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-[#f000b8] mb-6">
             On our platform, every registered user is a friend of the others.
             Create assignments together, complete them, and grade each other’s work.
             Make learning fun and interactive with group study sessions.
@@ -34,7 +34,7 @@ const AboutFeaturesSection = () => {
               <FaUsers />
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Learn with Friends</h3>
+              <h3 className="text-lg font-semibold text-[#f000b8]">Learn with Friends</h3>
               <p className="text-gray-600 text-sm">
                 Study in a group, share knowledge, and grow together.
               </p>
@@ -47,7 +47,7 @@ const AboutFeaturesSection = () => {
               <FaTasks />
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Unlimited Assignments</h3>
+              <h3 className="text-lg font-semibold text-[#f000b8]">Unlimited Assignments</h3>
               <p className="text-gray-600 text-sm">
                 Create as many assignments as you like, anytime.
               </p>
@@ -60,7 +60,7 @@ const AboutFeaturesSection = () => {
               <FaStar />
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Peer Grading</h3>
+              <h3 className="text-lg font-semibold text-[#f000b8]">Peer Grading</h3>
               <p className="text-gray-600 text-sm">
                 Let your friends grade your work and give feedback.
               </p>
@@ -73,14 +73,13 @@ const AboutFeaturesSection = () => {
               <FaGlobe />
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Global Access</h3>
+              <h3 className="text-lg font-semibold text-[#f000b8]">Global Access</h3>
               <p className="text-gray-600 text-sm">
                 Join from anywhere in the world and start learning.
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </section>
     );

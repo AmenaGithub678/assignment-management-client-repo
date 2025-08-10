@@ -41,7 +41,7 @@ const Faq = () => {
   <div className="collapse-content text-xl font-normal tracking-wide text-[#FF8DA1]">Yes! This system is built using the full MERN stack, which is widely used in real-world applications. It gives you hands-on experience with authentication, CRUD operations, protected routes, and more.
 </div>
 </div>  
-        </div>
+</div>
     );
 };
 

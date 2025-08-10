@@ -14,6 +14,7 @@ import PrivateRouter from "../Context/PrivateRouter";
 import UpdateAssignment from "../Pages/UpdateAssignment";
 import ViewAssignment from "../Pages/ViewAssignment";
 import Evalute from "../Componets/Evalute";
+import About from "../Pages/About";
 
 
 
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     {
         path: "/assignments",
        element: <Assignments/>
+    },
+    {
+        path: "/about",
+       element: <About></About>
     },
     {
   path: "/assignments/:id",

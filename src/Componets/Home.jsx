@@ -3,14 +3,16 @@ import Banner from './Banner';
 import Faq from './Faq';
 import Feature from './Feature';
 import AboutFeaturesSection from './AboutFeaturesSection';
+import SalesPromotion from './SalesPromotion';
 
 
 const Home = () => {
     return (
-        <div >
+<div >
 <Banner></Banner>
 <Feature></Feature>
 <AboutFeaturesSection></AboutFeaturesSection>
+ <SalesPromotion></SalesPromotion>
 <Faq></Faq>
         </div>
     );

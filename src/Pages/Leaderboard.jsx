@@ -110,12 +110,12 @@ export default function LeaderboardPage() {
             </div>
 
             <div className="mt-3">
-              <span className="font-semibold text-blue-600">Marks:</span>{" "}
+              <span className="font-semibold text-[#AD56C4]">Marks:</span>{" "}
               {leader.total_mark}
             </div>
 
             <div className="mt-3">
-              <h3 className="text-sm font-semibold text-gray-700 mb-1">
+              <h3 className="text-sm font-semibold text-[#AD56C4] mb-1">
                 Achievements:
               </h3>
               <ul className="list-disc list-inside text-sm text-gray-600">
@@ -135,7 +135,7 @@ export default function LeaderboardPage() {
       {/* Rest as table */}
       {rest.length > 0 && (
         <div className="bg-white rounded-xl shadow-lg p-5 border border-gray-200">
-          <h2 className="text-lg font-bold mb-4">📋 Other Rankings</h2>
+          <h2 className="text-lg font-bold mb-4 text-[#AD56C4]">📋 Other Rankings</h2>
           <table className="w-full text-sm text-left border-collapse">
             <thead>
               <tr className="bg-gray-100">

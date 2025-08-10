@@ -31,7 +31,7 @@ export default function ResourcesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-center mb-8">📚 Study Resources</h1>
+      <h1 className="text-3xl font-bold text-center mb-8 text-[#AD56C4]">📚 Study Resources</h1>
 
       {/* Filter Buttons */}
       <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -41,8 +41,8 @@ export default function ResourcesPage() {
             onClick={() => setSelectedCategory(cat)}
             className={`px-4 py-2 rounded-lg font-medium transition ${
               selectedCategory === cat
-                ? "bg-blue-500 text-white"
-                : "bg-gray-200 hover:bg-blue-400 hover:text-white"
+                ? "bg-[#AD56C4] text-white"
+                : "bg-gray-200 hover:bg-[#AD56C4] hover:text-white"
             }`}
           >
             {cat}
@@ -61,13 +61,13 @@ export default function ResourcesPage() {
             <p className="text-sm text-gray-500 mb-2">
               {resource.category} • {resource.type}
             </p>
-            <p className="text-gray-600 text-sm mb-4">{resource.description}</p>
+            <p className="text-[#f000b8] text-sm mb-4">{resource.description}</p>
 
             <a
               href={resource.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+              className="inline-block px-4 py-2 text-sm font-semibold text-white bg-[#AD56C4] rounded-lg hover:bg-[#AD56C4] transition"
             >
               View Resource
             </a>

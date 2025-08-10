@@ -3,8 +3,7 @@ import { FaUsers, FaTasks, FaStar, FaGlobe } from "react-icons/fa";
 const AboutFeaturesSection = () => {
     return (
         <section className="mx-auto px-4 py-12">
-      <div className="grid lg:grid-cols-2 gap-10 items-center">
-        
+      <div className="grid lg:grid-cols-2 gap-10 items-center">  
         {/* Left Content */}
         <div>
           <h2 className="text-3xl font-bold mb-4 text-[#AD56C4]">

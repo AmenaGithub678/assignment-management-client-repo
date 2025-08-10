@@ -81,17 +81,14 @@ const About = () => {
   </div>
 </section>
 
-
-
-
-        <div className="mx-auto sm:max-w-xl lg:max-w-screen-xl  lg:px-8 lg:py-20">
+        <div className="mx-auto sm:max-w-xl lg:max-w-screen-xl  lg:px-8 lg:py-20 mb-5">
   {/* Section Heading */}
-  <div className=" mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-[#AD56C4] uppercase rounded-full bg-teal-accent-400">
-      Our Instructors
+  <div className=" mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 text-center">
+    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-[#AD56C4] uppercase rounded-full bg-teal-accent-400 ">
+      Meet Our Talented Team   
     </p>
     <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#f000b8] sm:text-4xl md:mx-auto">
-      Meet Our Talented Team
+      Our Instructors
     </h2>
     <p className="text-base text-[#AD56C4] md:text-lg">
       Professionals dedicated to sharing knowledge and inspiring growth.

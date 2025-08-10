@@ -31,7 +31,10 @@ return (
               sticky 
               top-0 z-50">
       <div 
-      className="navbar bg-[#c4d6ffe6]  shadow-sm mt-8 px-4">
+      className="navbar 
+      bg-[#c4d6ffe6]  
+      shadow-sm mt-8 
+      px-4">
         {/* Navbar Start */}
         <div className="navbar-start">
           {/* Mobile Dropdown */}
@@ -77,7 +80,7 @@ return (
           <ul className="menu menu-horizontal px-1">
             <li><NavLink to="/" className={({ isActive }) => isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"}>Home</NavLink></li>
             <li><NavLink to="/assignments" className={({ isActive }) => isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"}>My Assignment</NavLink></li>
-               <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"}>About Us</NavLink></li>
+            <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"}>About Us</NavLink></li>
             
             {user && (
               <>

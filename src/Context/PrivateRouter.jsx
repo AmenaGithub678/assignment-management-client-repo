@@ -1,12 +1,12 @@
 import React, { use } from 'react';
  import { AuthContext } from './AuthContext';
  import { Navigate } from 'react-router';
-import LoadinSpinner from '../Componets/Shared/LoadinSpinner';
+import { RingLoader } from 'react-spinners';
 const PrivateRouter = ({children}) => {
    const {user,loading} = use(AuthContext)
 
 if(loading){
-    return <LoadinSpinner></LoadinSpinner>
+    return <RingLoader />
 }
 
      if(!user){

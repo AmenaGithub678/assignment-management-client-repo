@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router';
 import { MdAttachEmail } from "react-icons/md";
 import { FcSmartphoneTablet } from "react-icons/fc";
-
 const Footer = () => {
     return (
 <footer className="footer footer-horizontal footer-center 
@@ -16,19 +15,22 @@ bg-[#C4D6FF] text-base-content rounded p-10 ">
     <NavLink className={({       isActive }) =>
               isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"
            } to='/'>Home</NavLink></li>
-      <li className=' font-semibold text-lg text-[#f000b8]'>
-          <NavLink className={({ isActive }) =>
+           
+ <li 
+  className=' font-semibold 
+      text-lg 
+      text-[#f000b8]'>
+    <NavLink className={({       isActive }) =>
               isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"
-            } 
-            to='/createassignment'>Create Assugnment</NavLink></li>
-      <li className=' font-semibold text-lg text-[#f000b8]'>
-                <NavLink className={({ isActive }) =>
+           } to='/assignments'>My Assignment</NavLink></li>  
+
+           <li 
+  className=' font-semibold 
+      text-lg 
+      text-[#f000b8]'>
+    <NavLink className={({       isActive }) =>
               isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"
-            } to='/assignments'>My Assignments</NavLink></li>
-      <li className=' font-semibold text-lg text-[#f000b8]'>
-                <NavLink className={({ isActive }) =>
-              isActive ? "text-[#AD56C4] font-bold" : "text-[#f000b8] font-semibold"
-            } to='/Myattempt'>My Attempt</NavLink></li>
+           } to='/about'>About Us</NavLink></li> 
     </ul>
  
   </nav>

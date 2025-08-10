@@ -35,7 +35,7 @@ const Faq = () => {
   <div className="collapse-title  font-semibold text-2xl text-[#f000b8]">What makes this app recruiter-friendly?</div>
   <div className="collapse-content text-xl font-normal tracking-wide text-[#FF8DA1]">The app uses modern tools and follows best practices like clean design, responsive layout, meaningful commit history, secure data handling, and a structured README file — all of which impress recruiters.</div>
 </div>  
-<div className="collapse collapse-plus bg-base-100 border border-base-300">
+<div className="collapse collapse-plus bg-base-100 border border-base-300 mb-5">
   <input type="radio" name="my-accordion-3" />
   <div className="collapse-title  font-semibold text-2xl text-[#f000b8]">Can this platform help me prepare for real-world projects?</div>
   <div className="collapse-content text-xl font-normal tracking-wide text-[#FF8DA1]">Yes! This system is built using the full MERN stack, which is widely used in real-world applications. It gives you hands-on experience with authentication, CRUD operations, protected routes, and more.

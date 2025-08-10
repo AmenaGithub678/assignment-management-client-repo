@@ -59,5 +59,13 @@ AssignMates is a full-stack MERN web application designed to simplify group stud
 [Server Side](https://github.com/Programming-Hero-Web-Course4/b11a11-server-side-AmenaGithub678)
 
 
+## Documentation ---PUBLIC(MINE)
+
+[Client Side](https://github.com/AmenaGithub678/assignment-management-client-repo)
+
+[server Side](https://github.com/AmenaGithub678/assignment-management-server-side-repo)
+
+
+
 
 

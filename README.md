@@ -36,7 +36,7 @@ AssignMates is a full-stack MERN web application designed to simplify group stud
 
 ### 🔧 Frontend
 - React
-- React Router DOM
+- React Router
 - Tailwind CSS
 - Context API (AuthContext)
 - Firebase Authentication

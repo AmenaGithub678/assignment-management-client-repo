@@ -6,7 +6,7 @@ const Faq = () => {
 <div className='lg:p-10 bg-gray-100'>
 <div className='text-center mx-auto my-8'>
     <h1 className='font-normal text-xl lg:text-4xl text-[#AD56C4]'>
-   Frequency and Questions
+   Frequency and 
   </h1>
   </div>
 

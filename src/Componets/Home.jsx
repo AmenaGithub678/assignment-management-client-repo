@@ -4,6 +4,7 @@ import Faq from './Faq';
 import Feature from './Feature';
 import AboutFeaturesSection from './AboutFeaturesSection';
 import SalesPromotion from './SalesPromotion';
+import TestimonialSection from './TestimonialSection';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
 <Banner></Banner>
 <Feature></Feature>
 <AboutFeaturesSection></AboutFeaturesSection>
+<TestimonialSection></TestimonialSection>
  <SalesPromotion></SalesPromotion>
 <Faq></Faq>
         </div>
